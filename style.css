@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .navbar {
+    background-color: #333;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    padding: 0 10px;
+  }
+  
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1.05rem; /* Ajustez l'espacement des lettres selon vos besoins */
+  }
+  
+
+
+  .navbar-custom-color {
+    background-color: #ffffff; /* Une teinte de bleu ciel plus foncée */
+  }
+
+ 
+  .custom-carousel {
+    height: 300px;
+    width: 100%;
+  }

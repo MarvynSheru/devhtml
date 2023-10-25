@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre Site</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body { 
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+    .navbar-custom-color {
+      background-color: #5d85b2; /* Une teinte de bleu ciel plus foncée */
+    }
+    .custom-text p, .custom-slogan {
+      font-size: 4rem;
+      text-align: left;
+      color: #ffffff;
+    }
+    .carousel-image {
+      height: 600px; /* ou la hauteur que vous préférez */
+      object-fit: cover;
+    }
+    .custom-text p {
+      color: #ffffff; /* Blanc */
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);/* Inverse la couleur (noir devient blanc, etc.) */
+    }
+    .navbar-nav .nav-link {
+      color: #ffffff !important; /* ou la couleur de votre choix */
+    }
+    .reserve-button {
+      margin-top: 50px; /* Ajustez la valeur selon vos besoins */
+      font-size: 1.5rem; /* Ajustez la taille du texte selon vos besoins */
+    }
+    .text-center {
+      color:#5d85b2;
+      margin-top: 100px; /* Ajustez la valeur selon vos besoins */
+      font-size: 3.5rem; /* Ajustez la taille du texte selon vos besoins */
+    }
+    .footer {
+      background-color: #5d85b2;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .footer i {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar Foncé -->
+  <nav class="navbar navbar-expand-lg navbar-custom-color border-bottom border-body">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logow.png" alt="Logo" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDark" aria-controls="navbarNavDark" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDark">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Nos Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Nous Contacter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="cam3.jpg" class="d-block w-100 carousel-image" alt="image 3">
+        <div class="carousel-caption d-none d-md-block custom-text">
+          <p>Donnez vie à votre marque avec nos vidéos et photos publicitaires sur mesure!</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="cam.jpg" class="d-block w-100 carousel-image" alt="image 2">
+        <div class="carousel-caption d-none d-md-block custom-text">
+          <p>Des visuels qui valorisent votre professionnalisme.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="cam1.jpg" class="d-block w-100 carousel-image" alt="image 1">
+        <div class="carousel-caption d-none d-md-block custom-text">
+          <p>Mettez en scène votre succès avec nos services photo et vidéo.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="text-center mt-5">
+    <a href="contact.html" class="btn btn-primary btn-lg reserve-button">Réservez ici</a>
+  </div>
+  
+  <div class="text-center my-5">
+    <h1 style="font-size: 4rem; margin-top: 3rem;">GALERIE</h1>
+  </div>
+  <!-- Pied de page -->
+  <div class="footer">
+    <a href="mentions_legales.html">Mentions Légales</a> |
+    <a href="politique_confidentialite.html">Politique de Confidentialité</a> |
+    <a href="https://www.instagram.com/kbh.events.c/" target="_blank">Nos Réseaux <i class="fab fa-instagram"></i></a>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
