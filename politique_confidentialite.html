@@ -3,21 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de Confidentialité - KBH Events</title>
+  <title>Votre Site</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+    body { 
       margin: 0;
-      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
     }
     .navbar-custom-color {
-      background-color: #5d85b2;
+      background-color: #5d85b2; /* Une teinte de bleu ciel plus foncée */
+    }
+    .custom-text p, .custom-slogan {
+      font-size: 4rem;
+      text-align: left;
+      color: #ffffff;
+    }
+    .carousel-image {
+      height: 600px; /* ou la hauteur que vous préférez */
+      object-fit: cover;
+    }
+    .custom-text p {
+      color: #ffffff; /* Blanc */
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);/* Inverse la couleur (noir devient blanc, etc.) */
     }
     .navbar-nav .nav-link {
-      color: #ffffff !important;
+      color: #ffffff !important; /* ou la couleur de votre choix */
+    }
+    .reserve-button {
+      margin-top: 50px; /* Ajustez la valeur selon vos besoins */
+      font-size: 1.5rem; /* Ajustez la taille du texte selon vos besoins */
+    }
+    .text-center {
+      color:#5d85b2;
+      margin-top: 100px; /* Ajustez la valeur selon vos besoins */
+      font-size: 3.5rem; /* Ajustez la taille du texte selon vos besoins */
     }
     .footer {
       background-color: #5d85b2;
@@ -33,28 +62,22 @@
     .footer i {
       margin-left: 10px;
     }
-    .content {
-      padding: 20px;
-    }
-    .content h2 {
-      margin-top: 20px;
-    }
-    .content p {
-      margin-bottom: 20px;
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 16 16' height='16' width='16'%3e%3cpath d='M11.5 8a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-8 0a.5.5 0 0 1 .5-.5H7a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
     }
   </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-custom-color">
+  <!-- Navbar Foncé -->
+  <nav class="navbar navbar-expand-lg navbar-custom-color border-bottom border-body">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="logow.png" alt="Logo" height="100">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDark" aria-controls="navbarNavDark" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" style="color: white;"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNavDark">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Accueil</a>
@@ -63,16 +86,15 @@
             <a class="nav-link" href="services.html">Nos Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">À Propos</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html">Nous Contacter</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <!-- Contenu de la page -->
   <div class="content">
     <h1>Politique de Confidentialité</h1>

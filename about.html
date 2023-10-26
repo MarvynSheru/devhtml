@@ -1,65 +1,50 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>À Propos de Nous</title>
+  <title>Votre Site</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <style>
     body { 
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       height: 100vh;
     }
     .navbar-custom-color {
-      background-color: #5d85b2; /* Une teinte de bleu ciel plus foncée */
+      background-color: #5d85b2;
+    }
+    .custom-text p, .custom-slogan {
+      font-size: 4rem;
+      text-align: left;
+      color: #ffffff;
+    }
+    .carousel-image {
+      height: 600px;
+      object-fit: cover;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(100%);
     }
     .navbar-nav .nav-link {
-      color: #ffffff !important; /* ou la couleur de votre choix */
+      color: #ffffff !important;
     }
-    .about-title {
-      background-image: url('team-building-event.png'); /* Remplacez par le chemin de votre image */
-      background-size: cover;
-      background-position: center;
-      color: #ffffff;
-      text-align: center;
-      padding: 100px 0;
+    .reserve-button {
+      margin-top: 50px;
+      font-size: 1.5rem;
     }
-    .about-title h1, .contact-title h1 {
-      font-size: 5rem;
-      margin-bottom: 20px;
-    }
-    .about-title p, .contact-title p {
-      font-size: 2rem;
-    }
-    .about-content, .contact-content {
-      padding: 50px 15%;
-      text-align: justify;
-    }
-    .about-content h2, .contact-content h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    .about-content p, .contact-content p {
-      font-size: 1.2rem;
-      line-height: 1.6;
-    }
-    .contact-info {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      text-align: center;
-    }
-    .contact-info div {
-      flex: 1;
-    }
-    .contact-info i {
-      font-size: 3rem;
-      margin-bottom: 10px;
+    .text-center {
+      color:#5d85b2;
+      margin-top: 100px;
+      font-size: 3.5rem;
     }
     .footer {
       background-color: #5d85b2;
@@ -75,6 +60,40 @@
     .footer i {
       margin-left: 10px;
     }
+    .contact-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 2rem;
+    }
+    .contact-info div {
+      margin-bottom: 20px;
+    }
+    .bi {
+      margin-bottom: 10px;
+      font-size: 7rem;
+    }
+    .about-inner {
+      max-width: 700px;
+      padding: 0 20px;
+    }
+    .about-title h1, .about-title p, .contact-title h1 {
+    font-size: 2rem; /* Ajustez la taille du texte selon vos besoins */
+  }
+
+  .about-content p, .about-content h2 {
+    font-size: 1.5rem; /* Ajustez la taille du texte selon vos besoins */
+    color: gre;
+  }
+
+  .contact-info div {
+    font-size: 1.5rem; /* Ajustez la taille du texte selon vos besoins */
+  }
   </style>
 </head>
 <body>
@@ -85,7 +104,7 @@
         <img src="logow.png" alt="Logo" height="100">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDark" aria-controls="navbarNavDark" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars" style="color: white;"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDark">
         <ul class="navbar-nav ms-auto">
@@ -106,13 +125,12 @@
     </div>
   </nav>
 
-  <div class="about-title">
+  <div class="about-title text-center">
     <h1>ABOUT</h1>
     <p>QUI SOMMES NOUS ?</p>
   </div>
 
-
-  <div class="about-content">
+  <div class="about-content about-inner mx-auto text-center">
     <p>Nous comprenons que la visibilité et la présentation de votre entreprise sont cruciales : notre mission est de capturer chaque aspect de votre marque pour la rendre inoubliable. Voilà pourquoi KBH Events est le service audiovisuel qu’il vous faut !</p>
 
     <p>Notre équipe de professionnels est passionnée par l’art de raconter des histoires à travers des images et des vidéos. Nous croyons en l’importance des détails, des émotions et des instants qui rendent votre entreprise unique. Avec notre savoir-faire et notre sensibilité artistique, nous nous efforçons de créer des souvenirs durables et un impact visuel fort pour votre marque.</p>
@@ -126,26 +144,25 @@
 
     <p>En résumé, notre objectif est de capturer les moments précieux de votre entreprise d’une manière authentique, artistique et émouvante. Nous sommes déterminés à créer des souvenirs qui dureront toute une vie, en vous offrant un service exceptionnel. Notre équipe sera toujours prête à raconter l’histoire de votre marque, reflétant le professionnalisme et la beauté de votre entreprise.</p>
   </div>
-  
 
-  <div class="contact-title">
-  <h1 class="text-center">Contact</h1>
-</div>
-
+  <div class="contact-title text-center">
+    <h1>Contact</h1>
+  </div>
   <div class="contact-content">
     <div class="contact-info">
       <div>
         <i class="bi bi-telephone-fill"></i>
-        <p>Téléphone</p>
-        <p>+33 1 23 45 67 89</p>
+        <div>Téléphone</div>
+        <div>+33 1 23 45 67 89</div>
       </div>
       <div>
         <i class="bi bi-envelope-fill"></i>
-        <p>Email</p>
-        <p>contact@kbhevents.com</p>
+        <div>Email</div>
+        <div>contact@kbhevents.com</div>
       </div>
     </div>
   </div>
+
   <!-- Pied de page -->
   <div class="footer">
     <a href="mentions_legales.html">Mentions Légales</a> |
